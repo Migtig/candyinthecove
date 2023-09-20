@@ -29,11 +29,14 @@ get_header();
 			endif;
 
 		endwhile; // End of the loop.
-
 		?>
 
-		
+		<section>
+			<?php echo '<pre>' . print_r( $GLOBALS[ 'menu' ], true) . '</pre>'; ?>
+		</section>
+
 	</main><!-- #main -->
 
 <?php
+get_sidebar();
 get_footer();

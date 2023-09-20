@@ -176,3 +176,12 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Adds custom post types
+ */
+require get_template_directory() . '/inc/cpt.php';
+
+/**
+ * Admin customization features
+ */
+require get_template_directory() . '/inc/admin-customization.php';
