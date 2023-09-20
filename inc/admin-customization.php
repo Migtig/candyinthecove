@@ -22,7 +22,7 @@
  function citc_login_logo() { ?>
     <style type="text/css">
         #login h1 a, .login h1 a {
-            background-image: url(<?php echo get_template_directory_uri(); ?>/images/logo1-v2-solid.png);
+            background-image: url(<?php echo get_template_directory_uri(); ?>/images/logo-vector.png);
 		height:140px;
 		width:320px;
 		background-size: 140px 140px;
@@ -31,7 +31,7 @@
         }
     </style>
 <?php }
-// add_action( 'login_enqueue_scripts', 'citc_login_logo' );
+add_action( 'login_enqueue_scripts', 'citc_login_logo' );
 
 
 // Changes the logo link so that it points to your site, instead of wordpress.org
