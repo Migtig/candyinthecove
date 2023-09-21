@@ -31,10 +31,6 @@ get_header();
 		endwhile; // End of the loop.
 		?>
 
-		<section>
-			<?php echo '<pre>' . print_r( $GLOBALS[ 'menu' ], true) . '</pre>'; ?>
-		</section>
-
 	</main><!-- #main -->
 
 <?php
