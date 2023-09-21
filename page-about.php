@@ -30,24 +30,9 @@ get_header();
 
 		endwhile; // End of the loop.
 
-		if( function_exists( 'get_field' ) ) {
-			if( get_field( 'about_us_blurb' ) ) {
-				?>
-				<p><?php the_field( 'about_us_blurb' ); ?></p>
-				<?php
-			}
-
-			if( get_field( 'link_to_about' ) ) {
-				?>
-				<a href="<?php the_field( 'link_to_about' ); ?>" class="read-more-btn btn">Read More</a>
-				<?php
-			}
-		}
 
 		?>
 
-
-		
 	</main><!-- #main -->
 
 <?php
