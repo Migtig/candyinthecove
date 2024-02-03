@@ -30,6 +30,14 @@ get_header();
 
 		endwhile; // End of the loop.
 
+		if( function_exists( 'get_field' ) ) {
+			if( get_field( 'about_us_paragraph' ) ) {
+				?>
+				<p><?php the_field( 'about_us_paragraph' ); ?></p>
+				<?php
+			}
+		}
+
 
 		?>
 
