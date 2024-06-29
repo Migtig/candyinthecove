@@ -38,6 +38,37 @@ get_header();
 			}
 		}
 
+		if( function_exists( 'get_field' ) ) {
+			if( get_field( 'candy_info' ) ) {
+				?>
+				<p><?php the_field( 'candy_info' ); ?></p>
+				<?php
+			}
+		}
+
+		if( function_exists( 'get_field' ) ) {
+			if( get_field( 'payment_info' ) ) {
+				?>
+				<p><?php the_field( 'payment_info' ); ?></p>
+				<?php
+			}
+		}
+
+		if( function_exists( 'get_field' ) ) {
+			if( get_field( 'contact_jan_section' ) ) {
+				?>
+				<p><?php the_field( 'contact_jan_section' ); ?></p>
+				<?php
+			}
+		}
+
+		if( function_exists( 'get_field' ) ) {
+			if( get_field( 'link_to_contact' ) ) {
+				?>
+				<a href="<?php the_field( 'link_to_contact' ); ?>">Contact Us</a>
+				<?php
+			}
+		}
 
 		?>
 
